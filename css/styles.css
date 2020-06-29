@@ -21,7 +21,7 @@
 
    
 .container {
-    /* outline: solid tomato;    */
+    /* outline: solid tomato;     */
     margin: 0 auto;
     padding: 0 15px;
     width: 1200px;
@@ -53,11 +53,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     /* height: 80px; */
 
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em; 
+    /* margin-bottom: 0; */
+
 } 
 
 
@@ -112,15 +115,20 @@ img {
 /* .menu, */
 
 
- .contact .link {
+.contact-item .link {
     color: var(--secondary-text-color);
-}
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.6;
 
+}
  .contact-item:not(:last-child) {
      margin-right: 20px;
  }
  .contact-icon {
      margin-right: 10px;
+ 
+
  }  
 
  .active {
@@ -284,6 +292,8 @@ img {
     background: var(--title-text-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
+    width: 270px;
+
 }
 .team-card {
     padding: 30px 24px 32px 24px;
@@ -350,10 +360,24 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding-bottom: 29px;
+    /* padding-top: 51px; */
 } 
-.footer-info {
-    margin-top: 45px;
+/* .footer-content:first-child {
+    padding-top: 39px;
+
+} */
+.footer-content .footer-info {
+    padding-top: 39px;
+    
 }
+.footer-list {
+    padding-top: 51px;
+
+}
+/* .footer-info {
+    margin-top: 45px;
+} */
 .footer-info .logo-studio {
     color: var(--title-text-color);
 }
@@ -378,9 +402,9 @@ img {
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-list {
+/* .footer-list {
     margin-top: 57px;
- }
+ } */
 .footer-subtitle {
     display: block;
     margin-bottom: 20px;
@@ -419,6 +443,14 @@ img {
 
 
 /* Styles for Portfolio */
+
+.portfolio-page {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
 .portfolio {
     border-top: 1px solid #ECECEC;
 
@@ -429,18 +461,8 @@ img {
     padding-bottom: 94px;
     color: var(--primary-text-color);
 
-
-
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.03em;
-
-
-    /* list-style: none;
-    padding: 0;
-    margin: 0;  */
-
+   
 }
 
 
@@ -576,7 +598,6 @@ margin-right: 8px;
     font-size: inherit;
 
     line-height: 1.55;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 /* .example .title {
