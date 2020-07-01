@@ -21,7 +21,7 @@
 
    
 .container {
-    /* outline: solid tomato;     */
+    outline: solid tomato;    
     margin: 0 auto;
     padding: 0 15px;
     width: 1200px;
@@ -145,17 +145,36 @@ img {
 /* Styles for the main page of html */
 /* Hero section */
 
-.hero {
+.hero  {
+    margin: auto;
+    background-color: var(--secondary-text-color);
+
+}
+.overlay {
     padding-top: 200px;
     padding-bottom: 200px;  
-    height: 600px; 
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient( to right, 
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header\ img\ \(1\).jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* hero title */
+.hero-content {
     text-align: center;
-    background-color: var(--secondary-text-color);
     color: var(--title-text-color);
     letter-spacing: 0.06em;
 
+
 }
-/* hero title */
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -422,9 +441,11 @@ img {
 .footer .social .link{
     color: var(--title-text-color)
 }
-.footer-list .button {
-    padding: 10px 28px 10px 29px;
-}
+.footer-list .button-primary::after {
+    content: "";
+    font-size: 30px;
+    color: teal;
+  } 
 
 .footer-copyright {
     display: block;
