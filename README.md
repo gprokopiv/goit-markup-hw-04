@@ -1,2 +1,3 @@
 # goit-markup-hw-04
- All raster and vector images are optimized
+Markup and design for all decorative elements (icons) for the Studio and Portfolio pages are added </br>
+https://gprokopiv.github.io/goit-markup-hw-04/index.html
